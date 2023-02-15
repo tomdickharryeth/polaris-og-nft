@@ -7,7 +7,7 @@ async function main() {
 	console.log(`Account balance: ${(await deployer.getBalance()).toString()}`);
 
 	// Fetch the compiled contract using ethers.js
-	const NFT = await ethers.getContractFactory("Polaris OG NFT");
+	const NFT = await ethers.getContractFactory("PolarisOGs");
 	// calling deploy() will return an async Promise that we can await on 
 	const nft = await NFT.deploy();
 
